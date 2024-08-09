@@ -19,7 +19,6 @@ const StocksTemplate: React.FC<StocksTemplateProps> = () => {
           <StocksSearchInput />
         </div>
       }>
-
       <div className="grid grid-cols-12">
         <div className="col-span-12">
           <h2 className="text-xl font-bold my-2">Trending Stocks</h2>
@@ -34,6 +33,7 @@ const StocksTemplate: React.FC<StocksTemplateProps> = () => {
             <AddButton
               onClick={() =>
                 //todo: avoid using dom elements directly
+                //@ts-ignore
                 document.getElementById("watchlist_modal")?.showModal()
               }
             />

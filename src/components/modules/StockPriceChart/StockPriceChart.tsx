@@ -47,7 +47,7 @@ const chartOptions = {
         borderDash: [5, 5],
       },
       ticks: {
-        callback: (value) => `$${value}`,
+        callback: (value: string | number) => `$${value}`,
       },
     },
   },

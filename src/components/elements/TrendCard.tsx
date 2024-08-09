@@ -34,7 +34,7 @@ const TrendCard: React.FC<TrendCardProps> = ({
       </div>
       <div className="absolute right-0 bottom-0 w-1/2 h-1/2">
         <Line
-          data={getCardChartData(values)}
+          data={getCardChartData(values, { randomColor: false })}
           options={{
             responsive: true,
             plugins: {
